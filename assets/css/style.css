@@ -32,11 +32,11 @@ a {
   font-size: 1.6rem;
   font-weight: 600;
   border-radius: 24.5px;
-  background: #171100;
+  background: #ff270b;
 }
 /* ==========header=============== */
 .header {
-  background: #fffcf4;
+  background: #171100;
 }
 .header.fixed {
   position: sticky;
@@ -57,7 +57,7 @@ a {
 }
 .nav a {
   position: relative;
-  color: #5f5b53;
+  color: #ffffff;
   font-size: 1.6rem;
   font-style: normal;
   padding: 8px 21px;
@@ -65,7 +65,7 @@ a {
 .nav li.active,
 .nav a:hover {
   font-weight: 600;
-  color: #171100;
+  color: #ff0404;
 }
 .nav li.active a::after {
   position: absolute;
@@ -76,7 +76,7 @@ a {
   width: 12px;
   height: 2px;
   border-radius: 1px;
-  background: #171100;
+  background: #ffbb00;
 }
 
 .header .btn-sign-up {
@@ -84,4 +84,12 @@ a {
 }
 .header .action {
   margin-left: 49px;
+}
+.body img {
+  width: 85px;
+  height: 34px;
+  top: 44px;
+  left: 135px;
+  gap: 0px;
+  opacity: 0px;
 }
