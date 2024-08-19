@@ -55,6 +55,7 @@ a {
 .header.fixed {
   position: sticky;
   top: -28px;
+  z-index: 1;
 }
 .header .body {
   display: flex;
