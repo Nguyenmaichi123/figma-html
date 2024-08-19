@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+/* 1rem = 10px */
+html {
+  font-size: 62.5%;
+}
+
+/* khoi phuc co chu */
+body {
+  font-size: 1.6rem;
+}
