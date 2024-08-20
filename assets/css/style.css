@@ -19,7 +19,7 @@ a {
   text-decoration: none;
 }
 .main-content {
-  width: 1170px;
+  width: 1140px;
   max-width: calc(100% - 48px);
   margin-right: auto;
   margin-left: auto;
@@ -38,6 +38,8 @@ a {
 }
 .btn:hover {
   background-color: #000000;
+  opacity: 0.9;
+  cursor: pointer;
 }
 .item .hacker1 {
   width: 48px;
@@ -47,10 +49,18 @@ a {
   gap: 0px;
   opacity: 0px;
 }
+.heading-lv2 {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.27;
+  letter-spacing: -0.76px;
+}
 
 /* ==========header=============== */
 .header {
-  background: #171100;
+  background: #000000;
 }
 .header.fixed {
   position: sticky;
@@ -123,7 +133,7 @@ a {
 /* hero */
 .hero {
   padding: 56px 0 65px;
-  background: #171100;
+  background: #050505;
 }
 .hero .body {
   display: flex;
@@ -180,7 +190,7 @@ a {
   line-height: 1.86;
 }
 .hero-summary .title {
-  color: #000000;
+  color: #fff6f6;
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 1.67;
@@ -193,7 +203,7 @@ a {
   padding-top: 64px;
 }
 .hero .heading {
-  color: #000000;
+  color: #ffffff;
   font-family: var(--font-heading);
   font-size: 5.8rem;
   font-weight: 700;
@@ -264,4 +274,134 @@ a {
 }
 .hero .desc-3 {
   margin-top: 8px;
+}
+/* popular */
+.popular {
+  padding: 65px 0;
+}
+.popular-top .desc {
+  margin-top: 16px;
+  width: 458px;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #5f5b53;
+}
+.popular-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popular-top .control {
+  display: flex;
+}
+
+.popular-top .boc {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.popular-top .boc:hover {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: black;
+}
+
+.thumb {
+  width: 370px;
+  height: 278px;
+}
+
+.head .title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+}
+
+.head .value {
+  margin-left: 6px;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #fea31b;
+  margin-top: 3px;
+}
+
+.popular .course-list {
+  margin-top: 55px;
+  display: flex;
+}
+
+.popular .course-item {
+  border-radius: 12px;
+  background: #dbdbdb;
+  border: 4px solid #000000;
+  margin-right: 30px;
+}
+
+.popular .course-item:hover {
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05) px;
+}
+
+.popular .course-item .info {
+  padding: 16px 22px 22px;
+}
+.rating,
+.popular .course-item .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popular .course-item .desc {
+  margin-top: 6px;
+  color: #5f5b53;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+
+.popular .foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+.foot .price {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+}
+
+.popular .course-item .btn-book {
+  border: none;
+}
+
+.popular {
+  background-color: #050505;
+}
+
+.video-row {
+  display: flex; /* Sử dụng Flexbox để căn chỉnh các video */
+  gap: 1px;
+  background-color: black;
+}
+
+.video-background {
+  flex: 1; /* Video chiếm đều không gian có sẵn */
+  position: relative;
+  width: 100%; /* Đảm bảo video có chiều rộng đầy đủ của phần tử chứa */
+  height: 200px; /* Chiều cao video (có thể thay đổi theo nhu cầu) */
+  overflow: hidden;
+}
+
+.video-background video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
